@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Appreal | Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>El Appreal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mission.html">Mission & Vision</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="profile.html">Web Designer</a></li>
+        <li><a href="product.html" class="active">Products</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="Products" CERTIFICATE="Products Section">
+      <h1 class="center">Our Products</h1>
+      <div class="product-grid">
+        <div class="product">
+          <img src="2nd pants.jpg" alt="Vintage Denim Jacket" onclick="openModal(this)" onerror="this.src='images/placeholder.jpg';" />
+          <p>Pants For Men - ₱350</p>
+        </div>
+        <div class="product">
+          <img src="new dresss.webp" alt="White Maxi Dress" onclick="openModal(this)" onerror="this.src='images/placeholder.jpg';" />
+          <p>White Maxi Dress - ₱250</p>
+        </div>
+        <div class="product">
+          <img src="new bag.webp" alt="Retro Leather Bag" onclick="openModal(this)" onerror="this.src='images/placeholder.jpg';" />
+          <p>Retro Leather Bag - ₱400</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for product images -->
+    <div id="image-modal" class="modal" aria-label="Product Image Modal">
+      <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+      <img class="modal-content" id="modal-img" alt="Enlarged Product Image" />
+      <div id="modal-caption"></div>
+    </div>
+  </main>
+  
+  </section>
+    <section class="featured">
+      <div class="product-grid">
+        <div class="product">
+          <img src="new shirt.webp" alt="Shirt For Men">
+          <p>Shirt For Men - ₱550</p>
+        </div>
+        <div class="product">
+          <img src="SHORTTTT FOR YOUUUU.jpg" alt="Short UNISEX">
+          <p>Short UNISEX - ₱250</p>
+        </div>
+        <div class="product">
+          <img src="hoodieeee.jpg" alt="Hoodie Jacket UNISEX">
+          <p>Hoodie Jacket UNISEX - ₱700</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 El Appreal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
